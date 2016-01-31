@@ -28,8 +28,11 @@
 
     </div>
 
-    <div ng-repeat="x in lists">
-    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.text"></span>
+    <div class="todolist" ng-repeat="x in lists">
+     [{{$index + 1}}] <input type="checkbox" ng-model="x.done"> <span ng-bind="x.text"></span>
+     <form class="form-horizontal" ng-submit="todoremove($index)">
+     <button class="btn">Remove Task</button>
+     </form>
 </div>
 
 

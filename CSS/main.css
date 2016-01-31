@@ -6,3 +6,9 @@ body {
 div {
     text-align: center;
 }
+
+.todolist {
+  font-weight: bold;
+  color: red;
+  font-size: 250%;
+}

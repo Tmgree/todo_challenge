@@ -7,6 +7,10 @@ todolist.controller('TodoController', function($scope) {
     $scope.todoInput = "";
   };
 
+  $scope.todoremove = function($index){
+    $scope.lists.splice($index, 1);
+  };
+
   $scope.todoLength = function(){
     $scope.lists.length;
   };
